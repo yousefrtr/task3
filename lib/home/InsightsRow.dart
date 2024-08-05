@@ -89,7 +89,8 @@ Center InsightsRow(BuildContext context) {
                               ),
                             ),
                           ),
-                          Text("JUNE 10, 2022")
+                          Spacer(),
+                          Expanded(child: Text("JUNE 10, 2022"))
                         ],
                       ),
                       Padding(
@@ -170,7 +171,8 @@ Widget ImageAndTextForInsights(BuildContext context, String image, String title,
                 ),
               ),
             ),
-            Text("JUNE 10, 2022")
+            Spacer(),
+            Expanded(child: Text("JUNE 10, 2022"))
           ],
         ),
         Padding(

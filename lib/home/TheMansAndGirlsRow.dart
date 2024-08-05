@@ -34,6 +34,7 @@ Padding TheGirl2AndMan2Coulmn(BuildContext context) {
           ? MediaQuery.of(context).size.width * .425
           : MediaQuery.of(context).size.width * .8,
       child: Wrap(
+        runSpacing: 20,
         verticalDirection: isLargeScreen(context)
             ? VerticalDirection.down
             : VerticalDirection.up,

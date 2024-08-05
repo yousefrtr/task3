@@ -25,15 +25,17 @@ Padding QualifyRow(BuildContext context) {
                       "Do I ",
                       style: TextStyle(fontSize: 40),
                     ),
-                    Text(
-                      "Qualify?",
-                      style: TextStyle(
-                          color: Colors.green,
-                          fontSize: 40,
-                          decoration: isSmallScreen(context)
-                              ? null
-                              : TextDecoration.underline,
-                          decorationColor: Colors.green),
+                    Expanded(
+                      child: Text(
+                        "Qualify?",
+                        style: TextStyle(
+                            color: Colors.green,
+                            fontSize: 40,
+                            decoration: isSmallScreen(context)
+                                ? null
+                                : TextDecoration.underline,
+                            decorationColor: Colors.green),
+                      ),
                     )
                   ],
                 ),

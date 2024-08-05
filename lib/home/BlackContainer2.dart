@@ -164,12 +164,14 @@ Widget WhatsAppTele(BuildContext context, String Title) {
       padding: const EdgeInsets.all(10.0),
       child: Container(
         child: Padding(
-          padding: isSmallScreen(context)
-              ? EdgeInsets.all(20.0)
-              : EdgeInsets.all(40.0),
-          child: Text(
-            Title,
-            style: TextStyle(color: Colors.white),
+          padding: isLargeScreen(context)
+              ? EdgeInsets.all(40.0)
+              : EdgeInsets.all(20.0),
+          child: FittedBox(
+            child: Text(
+              Title,
+              style: TextStyle(color: Colors.white),
+            ),
           ),
         ),
         decoration: BoxDecoration(
